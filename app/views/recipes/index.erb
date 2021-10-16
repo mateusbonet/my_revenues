@@ -2,7 +2,9 @@
   Receitas
 </h1>
 <ul>
-  <li>Strognoff</li>
-  <li>Arroz</li>
-  <li>Feijão</li>
+  <% @recipes.each do |recipe| %>
+    <li>
+      <%= recipe %>
+    </li>
+    <% end %>
 </ul>
